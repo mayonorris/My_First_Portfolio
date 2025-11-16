@@ -31,13 +31,15 @@ Requirements
 5. Code must be W3C-compliant (validate with the W3C HTML Validator)
 
 📁 Repository Structure
-``My_First_Portfolio/
+``
+My_First_Portfolio/
 ├─ README.md
 ├─ html_basic/
 │  ├─ base_index.html       # Task 0: minimal, valid HTML
 │  ├─ index.html            # Task 1, 3, 4: content, nav, layout, learners table
 │  └─ tweets.html           # Task 2, 3: tweet embed + same layout + nav
 └─ portfolio/
- └─ index.html            # Task 5: Personal Portfolio page
+ └─ index.html            # Task 5: Personal Portfolio page\
+ 
 ``
 
