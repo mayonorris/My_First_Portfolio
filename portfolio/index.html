@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Portfolio</title>
+  <meta name="description" content="Portfolio of Mayo Takémsi Norris KADANGA — Ingénieur Statisticien-Économiste, Research Officer at INSEED-Togo, CaSEG co-founder, and ALX learner.">
+  <style>
+    /* Minimal, readable defaults (no frameworks) */
+    :root { --ink:#0f172a; --muted:#475569; --accent:#0d6efd; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif; color:var(--ink); line-height:1.6; }
+    header, nav, section, article, footer { padding: 1rem clamp(1rem, 2.5vw, 2rem); max-width: 1024px; margin-inline:auto; }
+    header { padding-top: 2rem; }
+    h1 { font-size: clamp(1.8rem, 2.5vw, 2.4rem); margin: 0 0 .25rem; }
+    h2 { margin: 1.5rem 0 .5rem; }
+    h3 { margin: 1rem 0 .25rem; }
+    p.lead { color: var(--muted); margin: 0.25rem 0 0.5rem; }
+    nav ul { display:flex; flex-wrap:wrap; gap:.75rem 1rem; list-style:none; padding:0; margin:0; }
+    nav a { text-decoration:none; color:var(--accent); }
+    .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:1rem; }
+    .card { border:1px solid #e5e7eb; border-radius:10px; padding:1rem; background:#fff; }
+    .meta { color:var(--muted); font-size:.95rem; }
+    .badges { display:flex; flex-wrap:wrap; gap:.4rem; margin:.25rem 0 .5rem; }
+    .badge { font-size:.8rem; border:1px solid #e5e7eb; padding:.15rem .5rem; border-radius:999px; }
+    .links a { margin-right: .75rem; }
+    footer p { text-align:center; color:var(--muted); }
+    /* Skip link for a11y */
+    .skip { position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; }
+    .skip:focus { position:static; width:auto; height:auto; padding:.5rem; background:#fff3cd; border:1px solid #ffe08a; }
+  </style>
+</head>
+<body>
+  <!-- Body contains the required semantic elements in order: header, nav, section, article, footer -->
+  <a class="skip" href="#introduction">Skip to content</a>
+
+  <header>
+    <h1>Mayo Takémsi Norris KADANGA</h1>
+    <p class="lead">Ingénieur Statisticien-Économiste • Research Officer (INSEED-Togo, National Accounts & Forecasting) • Co-Founder of CaSEG • ALX Front-End & Back-End learner</p>
+  </header>
+
+  <nav aria-label="Primary">
+    <ul>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- First SECTION (required in order spec) -->
+  <section id="introduction" aria-labelledby="intro-title">
+    <h2 id="intro-title">Introduction</h2>
+    <p>
+      I’m a statistics & econometrics professional focused on national accounts (QNA/CNT), time-series analysis (deseasonalization, nowcasting),
+      and data products for decision-makers. I build in R, Python, and JavaScript—currently advancing my Front-End & Back-End skills through ALX to ship cleaner,
+      more usable tools for SMEs and public institutions.
+    </p>
+  </section>
+
+  <!-- Standalone ARTICLE (satisfies the “header, nav, section, article, footer” order requirement) -->
+  <article id="featured" class="card" aria-labelledby="feat-title">
+    <h2 id="feat-title">Featured: Deseasonalization Web App (R Shiny)</h2>
+    <p class="meta">Time-series • X-13ARIMA-SEATS • STL • IMAE & CNT</p>
+    <p>
+      A Shiny app to ingest multiple series, detect seasonality by applying CH or OCSB tests, visualize ACF/PACF & periodogram, and apply X-13 or STL with
+      reproducible exports for quarterly/monthly national accounts.
+    </p>
+    <div class="badges">
+      <span class="badge">R</span>
+      <span class="badge">Shiny</span>
+      <span class="badge">Time Series</span>
+      <span class="badge">X-13</span>
+    </div>
+    <p class="links">
+      <a href="https://github.com/" target="_blank" rel="noopener">Repository</a>
+      <a href="https://example.com" target="_blank" rel="noopener">Live (demo)</a>
+    </p>
+  </article>
+
+  <!-- Additional content SECTIONS -->
+  <section id="projects" aria-labelledby="projects-title">
+    <h2 id="projects-title">Projects</h2>
+
+    <div class="grid">
+      <article class="project card">
+        <h3>IPPI / IPI Monitoring Dashboard</h3>
+        <p class="meta">Harmonized UEMOA indicators • Data quality & alerts</p>
+        <p>Professional dashboard for tracking industrial production indices and prices, with automated checks, revision tracking, and clean exports for reporting.</p>
+        <div class="badges">
+          <span class="badge">R</span><span class="badge">Shiny</span><span class="badge">TSstudio</span>
+        </div>
+        <p class="links">
+          <a href="https://github.com/" target="_blank" rel="noopener">Repository</a>
+          <a href="https://example.com" target="_blank" rel="noopener">Live (demo)</a>
+        </p>
+      </article>
+
+      <article class="project card">
+        <h3>SME Budgeting App (Front-End)</h3>
+        <p class="meta">ALX Capstone • Expense tracking • Reports</p>
+        <p>Mobile-first budgeting UI for SMEs: category budgets, CSV import/export, monthly snapshots, and visual reports, built with modern JS practices.</p>
+        <div class="badges">
+          <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+        </div>
+        <p class="links">
+          <a href="https://github.com/" target="_blank" rel="noopener">Repository</a>
+        </p>
+      </article>
+
+      <article class="project card">
+        <h3>Polling App (QR Sharing)</h3>
+        <p class="meta">ALX AI for Dev • Real-time tally</p>
+        <p>Simple polls with QR sharing, live results, and admin guard routes. Focus on clean state, accessibility, and deployment pipelines.</p>
+        <div class="badges">
+          <span class="badge">JS</span><span class="badge">Routing</span><span class="badge">Deploy</span>
+        </div>
+        <p class="links">
+          <a href="https://github.com/" target="_blank" rel="noopener">Repository</a>
+        </p>
+      </article>
+
+      <article class="project card">
+        <h3>Exchange Rate Volatility & Trade (WAEMU)</h3>
+        <p class="meta">Research • Econometrics</p>
+        <p>Empirical analysis of exchange-rate volatility on intra-union trade using robust panel methods and sensitivity checks.</p>
+        <div class="badges">
+          <span class="badge">Econometrics</span><span class="badge">Panel Data</span>
+        </div>
+        <p class="links">
+          <a href="https://github.com/" target="_blank" rel="noopener">Paper/Code</a>
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section id="about" aria-labelledby="about-title">
+    <h2 id="about-title">About Me</h2>
+    <p>
+      I’m an Ingénieur Statisticien-Économiste (ISE) with a strong background in statistics, time-series econometrics, and data systems. At INSEED-Togo,
+      I contribute to quarterly national accounts and forecasting. I co-founded the CaSEG cabinet to mentor interns and deliver training in R, Python,
+      SQL, and econometrics. I’m currently expanding my Front-End and Back-End skills to ship usable, elegant tools for public policy and SMEs.
+    </p>
+    <ul>
+      <li><strong>Domains:</strong> National Accounts (QNA/CNT), Nowcasting, Deseasonalization (X-13, STL), Indicators (IMAE, IPPI/IPI)</li>
+      <li><strong>Stacks:</strong> R (Shiny, tidyverse), Python (pandas, BS4), JavaScript (HTML/CSS/JS), basic dashboards</li>
+      <li><strong>Interests:</strong> Financial econometrics, risk modeling, clean data products, teaching & mentorship</li>
+    </ul>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">Contact</h2>
+    <p>Email: <a href="mailto:kadanganorris@gmail.com">kadanganorris@gmail.com</a> • <a href="mailto:mkadanga@inseed.tg">mkadanga@inseed.tg</a></p>
+    <p>
+      <a href="https://www.linkedin.com/in/mayo-takemsi-kadanga/" target="_blank" rel="noopener">LinkedIn</a> •
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> •
+      <a href="https://www.alxafrica.com/" target="_blank" rel="noopener">ALX</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mayo Takémsi Norris KADANGA</p>
+  </footer>
+</body>
+</html>
